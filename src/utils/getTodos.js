@@ -4,16 +4,19 @@ export function getTodos() {
         setTimeout(() => {
             res([{
                 id: uuid(),
-                text: 'Todo item from Serve'
+                text: 'Todo item from Serve',
+                done: false
             },
             {
                 id: uuid(),
-                text: 'Todo item 2 from Serve'
+                text: 'Todo item 2 from Serve',
+                done: true
             },
             {
                 id: uuid(),
-                text: 'Todo item 3 from Serve'
+                text: 'Todo item 3 from Serve',
+                done: false
             }])
-        }, 1000)
+        }, 500)
     })
 }
